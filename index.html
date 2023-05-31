@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <title>LIFF Starter</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+        <script src="liff-starter.js"></script>       
+   <script>
+      
+    </script>
+  </head>
+  <body>
+        <h1>LIFF App</h1>
+            <!--
+    <script>
+        window.onload = function() {
+            liff.init({ liffId: '1661073583-BbOq7eVp' }).then(function() {
+                // LIFF initialization succeeded
+                document.getElementById('openFlexButton').addEventListener('click', function() {
+                    liff.sendMessages([{
+                        type: 'text',
+                        text: 'Flex Message from LIFF App!'
+                    }]).then(function() {
+                        liff.closeWindow();
+                    });
+                });
+            }).catch(function(error) {
+                // LIFF initialization failed
+                console.log(error);
+            });
+        };
+    </script>
+    <button id="openFlexButton">Send Flex Message</button>
+   -->
+       <h1>Hello, your name is ?</h1>
+     <p></p>
+    <form action="/say_hello" method="post">
+ <label>Name:</label>
+ <input type="text" name="username">
+ <input type="submit" value="Submit"> 
+   </form>
+   {% if name != "" %}
+    <p>Hello, {{name}}</p>
+   {% endif %}
+
+  </body>
+</html>
